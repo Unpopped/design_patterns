@@ -38,13 +38,3 @@ Focus on organizing classes and objects into larger structures.
 - Proxy - Controlled access
 
 **See:** `structural_design_patterns/` module
-
----
-
-## 🔗 Next Steps
-
-After mastering design patterns, proceed to:
-- **Laboratory 4:** Architectural Patterns (Layered, Repository, Unit of Work)
-- **Laboratory 5:** Enterprise Patterns (AOP, Circuit Breaker, Anti-patterns)
-
-**Go back to root:** [software_architecture](../readme.md)
