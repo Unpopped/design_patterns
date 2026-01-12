@@ -1,6 +1,8 @@
-
 package org.example.command;
 
+import org.example.entity.Order;
+
 public interface OrderCommand {
-    void execute();
+    Order execute();
+    void undo();
 }

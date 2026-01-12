@@ -1,6 +1,7 @@
-
 package org.example.notification;
 
+import org.example.entity.Order;
+
 public interface Observer {
-    void update(String message);
+    void update(Order order, String message);
 }
