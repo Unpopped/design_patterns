@@ -2,20 +2,24 @@ package org.example.creational.factory;
 
 public class DocumentFactory {
 
-    // TODO: Implement this method to return the correct type of document
     public static Document createDocument(String type) {
+        Document doc;
         switch (type) {
             case "PDF":
-                // TODO: Return a PDFDocument instance
-                return null;
+                doc = new PDFDocument();
+                doc.setContent("This is a PDF document with important information.");
+                break;
             case "Word":
-                // TODO: Return a WordDocument instance
-                return null;
+                doc = new WordDocument();
+                doc.setContent("This is a Word document for editing.");
+                break;
             case "HTML":
-                // TODO: Return an HTMLDocument instance
-                return null;
+                doc = new HTMLDocument();
+                doc.setContent("<html><body><h1>Hello World</h1></body></html>");
+                break;
             default:
                 throw new IllegalArgumentException("Unknown document type: " + type);
         }
+        return doc;
     }
 }

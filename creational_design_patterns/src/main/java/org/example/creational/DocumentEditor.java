@@ -8,14 +8,20 @@ public class DocumentEditor {
     public void openDocument(String type) {
         Document doc = DocumentFactory.createDocument(type);
         doc.open();
+        doc.display();
+        doc.save();
     }
 
     public static void main(String[] args) {
+
         DocumentEditor editor = new DocumentEditor();
 
-        // TODO: Test opening different types of documents (PDF, Word, HTML)
         editor.openDocument("PDF");
+        System.out.println();
+
         editor.openDocument("Word");
+        System.out.println();
+
         editor.openDocument("HTML");
     }
 }
