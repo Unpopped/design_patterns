@@ -5,11 +5,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Book {
@@ -19,9 +21,9 @@ public class Book {
 
     String title;
     String author;
+    String category;
     double price;
 
-    // TODO: Implement description method
     public String getDescription() {
         return title + " by " + author;
     }

@@ -3,25 +3,40 @@ package org.example.structural.utils;
 
 import org.example.structural.dto.BookDto;
 import org.example.structural.entity.Book;
+import org.example.structural.service.BookDecorator;
 
 public class BookMapper {
 
-    // Convert Book entity to BookDto
     public static BookDto toDTO(Book book) {
-        BookDto dto = new BookDto();
-        dto.setTitle(book.getTitle());
-        dto.setAuthor(book.getAuthor());
-        dto.setPrice(book.getPrice());
-        return dto;
+        return BookDto.builder()
+                .id(book.getId())
+                .title(book.getTitle())
+                .author(book.getAuthor())
+                .category(book.getCategory())
+                .price(book.getPrice())
+                .description(book.getDescription())
+                .build();
     }
 
-    // Convert BookDto to Book entity
+    public static BookDto toDTO(BookDecorator decorator) {
+        return BookDto.builder()
+                .id(decorator.getWrappedBook().getId())
+                .title(decorator.getTitle())
+                .author(decorator.getAuthor())
+                .category(decorator.getCategory())
+                .price(decorator.getPrice())
+                .description(decorator.getDescription())
+                .build();
+    }
+
     public static Book toEntity(BookDto dto) {
-        Book book = new Book();
-        book.setTitle(dto.getTitle());
-        book.setAuthor(dto.getAuthor());
-        book.setPrice(dto.getPrice());
-        return book;
+        return Book.builder()
+                .id(dto.getId())
+                .title(dto.getTitle())
+                .author(dto.getAuthor())
+                .category(dto.getCategory())
+                .price(dto.getPrice())
+                .build();
     }
 }
 

@@ -495,7 +495,7 @@ You are tasked with creating a **Book Management System** for a library using Sp
    - Configure H2 in-memory database with sample data for testing.
    - **RUN CONFIGURATION**: Use the IntelliJ run configuration to start the Spring Boot application. 
    - use java 17, Amazon Coretto (File/Project Structure/ sdk dropdown/ download java 17-Amazon Coretto)
-   - Acess [Swagger UI](http://localhost:8080/swagger-ui/index.html)
+   - Access [Swagger UI](http://localhost:8080/swagger-ui/index.html)
    - Access [h2 console](http://localhost:8080/h2-console)
      ```
      Driver Class: org.h2.Driver
