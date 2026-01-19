@@ -1,0 +1,10 @@
+INSERT INTO book (title, author, category, price) VALUES ('Clean Code', 'Robert C. Martin', 'Programming', 35.99);
+INSERT INTO book (title, author, category, price) VALUES ('Design Patterns', 'Gang of Four', 'Programming', 45.00);
+INSERT INTO book (title, author, category, price) VALUES ('The Pragmatic Programmer', 'David Thomas', 'Programming', 42.50);
+INSERT INTO book (title, author, category, price) VALUES ('Refactoring', 'Martin Fowler', 'Programming', 38.00);
+INSERT INTO book (title, author, category, price) VALUES ('1984', 'George Orwell', 'Fiction', 12.99);
+INSERT INTO book (title, author, category, price) VALUES ('To Kill a Mockingbird', 'Harper Lee', 'Fiction', 14.99);
+INSERT INTO book (title, author, category, price) VALUES ('The Great Gatsby', 'F. Scott Fitzgerald', 'Fiction', 10.99);
+INSERT INTO book (title, author, category, price) VALUES ('Sapiens', 'Yuval Noah Harari', 'History', 22.00);
+INSERT INTO book (title, author, category, price) VALUES ('A Brief History of Time', 'Stephen Hawking', 'Science', 18.50);
+INSERT INTO book (title, author, category, price) VALUES ('The Art of War', 'Sun Tzu', 'Philosophy', 9.99);
